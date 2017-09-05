@@ -52,5 +52,14 @@
 <audio data-key="74" src="sounds/snare.wav"></audio>
 <audio data-key="75" src="sounds/tom.wav"></audio>
 <audio data-key="76" src="sounds/tink.wav"></audio>
+<script type="text/javascript">
+	window.addEventListener("keydown", function(e) {
+		const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
+		if(!audio) return;
+		audio.play();
+		audio.currentTime = 0;
+});
+
+</script>
 </body>
 </html>
