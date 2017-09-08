@@ -1,11 +1,33 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>Day 2:A Clock</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div id='circle_1'></div>
-<div id='circle_2'></div>
-</body>
-</html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="250"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = canvas.width / 2;
+      var y = canvas.height / 2;
+      var radius = 90;
+      var startAngle = 1.1 * Math.PI;
+      var endAngle = 3.5 * Math.PI;
+      var counterClockwise = false;
+
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 1;
+
+      // line color
+      context.strokeStyle = 'black';
+      context.stroke();
+    </script>
+  </body>
+</html>      
