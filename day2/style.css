@@ -15,28 +15,24 @@ html {
     margin: 85px 159px 0px 0px;
 }
 
-#dot {
-    background-color: grey;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-}
+
 
 .hand {
     background: black;
-    width: 43%;
+    width: 45%;
     height: 4px;
     position: absolute;
-    top: 50.9%;
+    top: 50%;
     left: 8px;
+    transform-origin: right;
+    transition: all 0.05s;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0, 0, 0, 2.84);
 }
 
 #header {
     color: white;
-    font-family: 'Libre Barcode 39 Text', cursive;
+    font-family: 'Libre Barcode 128', cursive;
     font-size: 100px;
     float: left;
     margin-left: 89px;
@@ -52,16 +48,23 @@ ul {
 }
 
 div.para {
-    font-family: 'Bitter', serif;
+    font-family: 'telex', serif;
     font-size: 15px;
     color: white;
     float: left;
     width: 600px;
     margin-top: 208px;
-    margin-left: -601px;
+    margin-left: -430px;
 }
 
 body {
     width: auto;
     height: -webkit-fill-available;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+
+   
 }
