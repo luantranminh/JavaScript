@@ -62,9 +62,20 @@ body {
     height: -webkit-fill-available;
 }
 
-.hour-hand,
-.minute-hand,
 .second-hand {
+	height: 1px;
+	background: red;
+}
+.min-hand {
 
-   
+}
+.hour-hand {
+	width: 30%;
+	left: 53px;
+}
+.line {
+	width: 3px;
+	height: 3px;
+	background: black;
+	
 }
