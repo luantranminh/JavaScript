@@ -20,7 +20,9 @@ let cities = [];
 fetch(endpoint)
 .then(blob => blob.json())
 .then(function (data) {
-  cities.push(data);
+  console.log(data);
+  cities = [...data];
+
 })
 
 
